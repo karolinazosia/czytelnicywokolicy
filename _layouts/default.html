@@ -1,0 +1,86 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Czytelnicy w okolicy {% if page.okolica %}{{ page.okolica }}{% endif %}</title>
+    <meta name="description" content="Poznaj swoich sąsiadów. Pożyczajcie sobie książki.">
+    <link rel="stylesheet" href="http://czytelnicywokolicy.pl/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+  </head>
+  <body>
+    <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-tag" viewBox="0 0 1024 1024">
+      <title>tag</title>
+      <path class="path1" d="M987.699 20.787c-5.53-16.128-22.989-24.627-38.963-19.046s-24.371 23.245-18.79 39.424c47.104 136.704-46.387 238.797-117.606 293.427l-28.826-41.677c-9.626-13.926-31.334-25.549-48.128-25.805l-161.536 0.768c-16.794-0.256-41.779 7.526-55.603 17.254l-475.955 337.306c-23.040 16.333-28.723 48.486-12.544 71.834l216.371 312.678c16.128 23.347 42.086 20.531 65.126 4.25l475.955-337.357c13.824-9.728 29.542-30.925 35.123-47.002l50.586-161.075c5.478-16.077 2.15-40.653-7.475-54.579l-17.613-25.395c95.693-73.984 195.021-204.902 139.878-365.005zM766.259 499.814c-36.915 26.163-87.757 17.050-113.613-20.275-25.805-37.325-16.845-88.781 20.070-114.944 29.286-20.787 67.328-19.251 94.72 0.922-13.824 8.397-23.245 13.21-25.037 14.080-15.258 7.27-21.811 25.702-14.592 41.165 5.222 11.213 16.179 17.818 27.699 17.818 4.352 0 8.806-0.973 13.005-2.97 9.779-4.659 20.378-10.342 31.386-16.947 4.915 30.362-7.066 62.31-33.638 81.152z"></path>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 1024 1024">
+      <title>calendar</title>
+      <path class="path1" d="M870.4 153.6h-46.080v102.4h-163.84v-102.4h-296.96v102.4h-163.84v-102.4h-46.080c-56.32 0-102.4 46.080-102.4 102.4v614.4c0 56.32 46.080 102.4 102.4 102.4h716.8c56.32 0 102.4-46.080 102.4-102.4v-614.4c0-56.32-46.080-102.4-102.4-102.4zM870.4 870.4h-716.8v-409.6h716.8v409.6zM317.44 51.2h-71.68v174.080h71.68v-174.080zM778.24 51.2h-71.68v174.080h71.68v-174.080z"></path>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 1024 1024">
+      <title>twitter</title>
+      <path class="path1" d="M983.040 219.802c-34.714 15.411-71.936 25.754-111.053 30.464 39.936-23.91 70.605-61.798 84.992-106.906-37.325 22.118-78.694 38.246-122.675 46.899-35.277-37.581-85.504-61.030-141.107-61.030-106.752 0-193.28 86.528-193.28 193.229 0 15.155 1.69 29.901 5.018 44.032-160.614-8.038-303.053-84.992-398.336-201.933-16.691 28.518-26.266 61.747-26.266 97.178 0 67.072 34.15 126.208 86.016 160.87-31.693-1.024-61.491-9.677-87.552-24.166 0 0.819 0 1.587 0 2.406 0 93.645 66.662 171.725 155.034 189.542-16.179 4.403-33.28 6.758-50.944 6.758-12.442 0-24.525-1.178-36.352-3.43 24.576 76.8 96 132.659 180.531 134.195-66.15 51.866-149.453 82.739-240.026 82.739-15.616 0-30.976-0.922-46.080-2.714 85.504 54.835 187.085 86.835 296.294 86.835 355.482 0 549.888-294.502 549.888-549.939 0-8.346-0.154-16.691-0.563-24.986 37.786-27.238 70.502-61.286 96.461-100.045z"></path>
+    </symbol>
+    </defs>
+    </svg>
+    <div class="wrapper">
+      <header>
+        <h1><a class="site-title" href="http://czytelnicywokolicy.pl" title="Czytelnicy w okolicy – Poznaj swoich sąsiadów. Pożyczajcie sobie książki.">Czytelnicy w okolicy</a></h1>
+      </header>
+      <nav class="clearfix" role="navigation">
+        <ul class="nav nav-tabs">
+          <li><a href="http://czytelnicywokolicy.pl">Home</a></li>
+          <li><a href="http://czytelnicywokolicy.pl/jak-to-dziala.html">Jak to działa?</a></li>
+          <li><a href="http://czytelnicywokolicy.pl/faq.html">FAQ</a></li>
+          <li><a href="https://github.com/{{ site.okolica }}/czytelnicywokolicy/" class="dodaj">Dodaj książkę +</a></li>
+        </ul>
+      </nav>
+      {% if page.okolica %}<h2>{{ page.okolica }}</h2>{% endif %}
+      <div id="ksiazki" class="tab-pane active">
+      {% if page.ksiazki %}
+        <div class="sortuj clearfix">
+          <input class="search" placeholder="Szukaj" />
+          <div class="wedlug">
+            <span>Sortuj wg</span>
+            <button class="sort" data-sort="tytul">tytul</button>
+            <button class="sort" data-sort="autor">autor</button>
+            <button class="sort" data-sort="gatunek">gatunek</button>
+            <button class="sort" data-sort="czytelnicy">czytelnicy</button>
+            <button class="sort desc" data-sort="dodana">dodana</button>
+          </div>
+        </div>
+          <div class="list">
+          {% for ksiazka in page.ksiazki %}
+            <li class="ksiazka">
+              <h3 class="tytul">{{ ksiazka.tytul }}</h3> – <span class="autor">{{ ksiazka.autor }}</span><br>
+              <span class="gatunek"><svg class="icon-tag"><use xlink:href="#icon-tag"></use></svg> {{ ksiazka.gatunek }}</span>
+              <span class="dodana"><svg class="icon-calendar"><use xlink:href="#icon-calendar"></use></svg> {{ ksiazka.dodana }}</span><br>
+              <span class="czytelnicy">{% for czytelnik in ksiazka.czytelnicy %}<svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg> <a class="czytelnik" href="https://twitter.com/{{ czytelnik.twitter }}" title="Skontaktuj się za pomocą Twittera">{{ czytelnik.twitter }}</a>{% endfor %}</span>
+            </li>
+          {% endfor %}
+          </div>
+      {% endif %}
+      </div>
+    </div><!-- wrapper -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://czytelnicywokolicy.pl/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://czytelnicywokolicy.pl/js/plugins.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53514001-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
